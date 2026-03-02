@@ -16,7 +16,7 @@ This project implements a core autograd engine from scratch, featuring dynamic c
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/0xAnv/autograd-engine.git
 cd autograd-engine
 ```
 
