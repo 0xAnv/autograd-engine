@@ -1,6 +1,5 @@
-// Device that can run our tensor operations
-
 #include <cstdlib>
+#include <new>
 enum class Device { CPU, GPU };
 
 // Allocator base class -> Allocates memory
@@ -14,7 +13,14 @@ public:
 // CPU Allocator
 class CPUAllocator : public Allocator {
 public:
-  void *allocate(size_t bytes) override { return std::malloc(bytes); }
+  void *allocate(size_t bytes) override {
+    // return std::malloc(bytes);
+    void *ptr = std::malloc(bytes);
+    if (ptr == nullptr && bytes > 0) { // check for nullptr
+      throw std::bad_alloc();
+    }
+    return ptr;
+  }
 
   void deallocate(void *ptr, size_t /*bytes*/) override { std::free(ptr); }
 };
