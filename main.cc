@@ -1,7 +1,7 @@
 // Entry point to test our engine
 
-#include "ag/storage.hpp" // storage class with allocated access
-#include <iostream>       // to print
+#include "ag/storage.hh" // storage class with allocated access
+#include <iostream>      // to print
 
 int main() {
   std::cout << "=== Memory Test Starting ===" << std::endl;
