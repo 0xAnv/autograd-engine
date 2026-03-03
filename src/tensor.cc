@@ -1,5 +1,5 @@
-#include "ag/tensor.hpp"
-#include "ag/storage.hpp"
+#include "ag/tensor.hh"
+#include "ag/storage.hh"
 #include <cstddef>
 #include <cstdint>
 #include <cstring>

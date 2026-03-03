@@ -1,4 +1,4 @@
-#include "ag/storage.hpp"
+#include "ag/storage.hh"
 
 // Storage class Initializer
 Storage::Storage(size_t size_bytes, Device device)

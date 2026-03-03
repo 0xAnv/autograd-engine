@@ -1,4 +1,4 @@
-#include "ag/allocator.hpp"
+#include "ag/allocator.hh"
 #include <stdexcept>
 
 // Global static instance of CPUAllocator.
