@@ -8,9 +8,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # The core engine library 
 add_library(ag_core STATIC 
-    "src/tensor.cpp"
-    "src/storage.cpp"
-    "src/allocator.cpp"
+    "src/tensor.cc"
+    "src/storage.cc"
+    "src/allocator.cc"
 ) 
 
 target_include_directories( ag_core PUBLIC 
