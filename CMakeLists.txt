@@ -22,7 +22,7 @@ target_compile_options(ag_core PRIVATE
 )
 
 # The main executable 
-add_executable(ag_main main.cpp)
+add_executable(ag_main main.cc)
 
 # link the executable to our core library
 target_link_libraries(ag_main PRIVATE ag_core) 

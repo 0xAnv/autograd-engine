@@ -1,4 +1,4 @@
-#include "ag/tensor.hpp"
+#include "ag/tensor.hh"
 #include <gtest/gtest.h>
 
 TEST(TensorTest, ConstructorAndSize) {
